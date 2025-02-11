@@ -11,11 +11,89 @@ body {
     font-family: "Poppins", serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* Common */
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    color: #000958;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 9, 88, 0.7);
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Sora", serif;
 }
 
-input, textarea, select, button {
+input,
+textarea,
+select,
+button {
     font-size: inherit;
     font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding: 26px 0;
+    background: #FFFAF5;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar__link,
+.header-action__link {
+    padding: 8px 18px;
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.navbar__link:hover {
+    color: #000958;
+    text-shadow: 0.5px 0 0 currentColor;
+    /* 
+        Xai text shadow thay cho font-weight de cac chu khong bi giat
+        font-weight: 600;
+    */
+}
+
+.header-action__btn {
+    --height: 50px;
+    min-width: 118px;
 }
