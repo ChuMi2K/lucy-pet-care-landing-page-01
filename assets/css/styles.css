@@ -549,3 +549,121 @@ button {
     opacity: 1;
     height: 1.5px;
 }
+
+/* Service */
+.service {
+    margin-top: 190px;
+    background-color: #fff6ed;
+    padding: 68px 0 100px;
+}
+
+.service__top {
+    text-align: center;
+}
+
+.service__desc {
+    margin-bottom: 15px;
+    color: #5e6085;
+    font-family: Sora, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.service__body {
+    margin-top: 71px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 70px;
+}
+
+.service__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.service-item {
+    width: 294px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+    padding: 30px 28px;
+}
+
+.service-item__heading {
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+    position: relative;
+    padding-left: 12px;
+}
+
+.service-item__heading::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    border-radius: 1px;
+    background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+    inset: 0 auto 0 0;
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+}
+
+.service-item__more {
+    margin-top: 24px;
+    color: #34396a;
+    font-family: Sora, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.service__media {
+    position: relative;
+    margin-top: 18px;
+    z-index: 1;
+}
+
+.service__media::after {
+    content: "";
+    position: absolute;
+    margin-top: 18px;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+}
+
+.service__img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: block;
+}
+
+.service__cta-wrap {
+    margin-top: 21px;
+    text-align: center;
+}
+
+.service__cta {
+    min-width: 214px;
+    color: #ff5b2e;
+    border-color: currentColor;
+}
